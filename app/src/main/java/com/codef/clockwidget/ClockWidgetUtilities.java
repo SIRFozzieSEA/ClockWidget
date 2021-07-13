@@ -24,14 +24,14 @@ public class ClockWidgetUtilities {
         String currentAmPm = dateFormatAmPm.format(new Date());
         String currentDate = dateFormatYearMonthDay.format(new Date());
 
-        int masterOffset = 150;
-        int timeOffset = 20;
-        int dateOffset = 150;
+        int masterOffset = 180;
+        int timeOffset = 0;
+        int dateOffset = 120;
 
         int bitmapWidth = 2280;
         int bitmapHeight = 1080;
 
-        float timeSize = 600;
+        float timeSize = 570;
         float dateSize = 105;
 
         Bitmap bitmap = Bitmap.createBitmap(bitmapWidth, bitmapHeight, Bitmap.Config.ARGB_4444);
