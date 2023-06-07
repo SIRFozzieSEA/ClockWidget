@@ -13,11 +13,14 @@ import android.widget.RemoteViews;
 
 import java.util.Calendar;
 
+
+/* Be sure to allow unrestricted battery access so the time doesn't lag */
+
 public class ClockWidget extends AppWidgetProvider {
 
     String TAG = AppWidgetProvider.class.getSimpleName();
 
-    private static String CLOCK_WIDGET_UPDATE = "com.codef.clockwidget.UPDATE";
+    private static final String CLOCK_WIDGET_UPDATE = "com.codef.clockwidget.UPDATE";
 
     @Override
     public void onDeleted(Context context, int[] appWidgetIds) {
@@ -46,7 +49,6 @@ public class ClockWidget extends AppWidgetProvider {
             ComponentName thisAppWidget = new ComponentName(context.getPackageName(), getClass().getName());
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
             int[] ids = appWidgetManager.getAppWidgetIds(thisAppWidget);
-            boolean increaserefreshrate = false;
             for (int appWidgetID : ids) {
                 updateAppWidget(clockBitmap, context, appWidgetManager, appWidgetID);
             }
