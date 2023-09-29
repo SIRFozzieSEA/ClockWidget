@@ -24,9 +24,9 @@ public class ClockWidgetUtilities {
         String currentAmPm = dateFormatAmPm.format(new Date());
         String currentDate = dateFormatYearMonthDay.format(new Date());
 
-        int masterOffset = 180;
+        int masterOffset = 160;
         int timeOffset = 0;
-        int dateOffset = 120;
+        int dateOffset = 140;
 
         int bitmapWidth = 2280;
         int bitmapHeight = 1080;
