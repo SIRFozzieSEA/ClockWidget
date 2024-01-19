@@ -1,2 +1,2 @@
 # ClockWidget
-ClockWidget
+Android ClockWidget
